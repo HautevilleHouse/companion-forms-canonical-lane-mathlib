@@ -1,0 +1,7 @@
+-- This module is the root of the CompanionFormsCanonicalLaneLean Lean proof package.
+import CompanionFormsCanonicalLaneLean.Basic
+import CompanionFormsCanonicalLaneLean.SourcePackage
+import CompanionFormsCanonicalLaneLean.SourceDependencies
+import CompanionFormsCanonicalLaneLean.Formalization
+import CompanionFormsCanonicalLaneLean.ReviewerBridge
+import CompanionFormsCanonicalLaneLean.TheoremStatement

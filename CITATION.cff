@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+title: "Companion Forms via Weight-Companion Persistence Lean 4 Proof Package"
+message: "If you use this Lean proof package, cite this repository and the source Canonical Lane manuscript."
+type: software
+authors:
+  - name: "HautevilleHouse"
+date-released: 2026-03-05
+repository-code: "https://github.com/HautevilleHouse/companion-forms-canonical-lane-lean4"
+url: "https://github.com/HautevilleHouse/companion-forms-canonical-lane-lean4"
+license: None
+keywords:
+  - "lean4"
+  - "formalization"
+  - "mathematical-proof"
+  - "canonical-lane"
+  - "reviewer-bridge"
+  - "automorphic-forms"
+  - "companion-forms"
+  - "galois-representations"
+  - "local-to-global"
+  - "manifold-constrained"
+  - "reproducibility"
+preferred-citation:
+  type: article
+  title: "Companion Forms via Weight-Companion Persistence"
+  authors:
+    - name: "HautevilleHouse"
+  date: 2026-03-05
