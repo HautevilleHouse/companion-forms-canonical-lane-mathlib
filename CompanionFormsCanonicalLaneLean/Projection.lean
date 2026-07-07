@@ -5,14 +5,14 @@ namespace CompanionFormsCanonicalLaneLean
 
 open HautevilleHouse.CanonicalLaneMathlibCore
 
-def theoremProjection : Projection EndgameState := {
+def closureProjection : Projection ClosureState := {
   toFun := fun x => x,
   idempotent := by intro x; rfl
 }
 
-theorem theorem_projection_idempotent (x : EndgameState) :
-    theoremProjection.toFun (theoremProjection.toFun x) = theoremProjection.toFun x := by
-  exact theoremProjection.idempotent x
+theorem closure_projection_idempotent (x : ClosureState) :
+    closureProjection.toFun (closureProjection.toFun x) = closureProjection.toFun x := by
+  exact closureProjection.idempotent x
 
 end CompanionFormsCanonicalLaneLean
 end HautevilleHouse

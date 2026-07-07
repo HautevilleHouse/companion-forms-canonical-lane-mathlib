@@ -5,8 +5,8 @@ import CanonicalLaneMathlibCore
 # Mathlib Statement Layer
 
 This module imports the shared Mathlib-backed Canonical Lane core and the
-Companion Forms endgame pilot. The pilot closes over its admitted class and carries the
-unrestricted classical boundary separately.
+Companion Forms closure layer. The encoded Lean target closes over its admitted class
+and carries the unrestricted classical boundary separately.
 -/
 
 namespace HautevilleHouse
@@ -33,7 +33,7 @@ def mathlibProofObligation : MathlibProofObligation := {
   theoremSpecificBridgeNative := true,
   theoremSpecificAdmittedClosureNative := true,
   unrestrictedClassicalClosureNative := false,
-  carriedGap := "theorem-specific Mathlib endgame pilot closes over the admitted class; unrestricted classical closure remains carried"
+  carriedGap := "theorem-specific Mathlib closure layer closes over the admitted class; unrestricted classical closure remains carried"
 }
 
 def commonCoreProjectionLawAvailable : Prop :=
@@ -83,13 +83,13 @@ theorem mathlib_common_core_idempotence_checked :
   intro X instAdd instSub L
   exact AdditiveLane.projection_idempotent_on_delta L
 
-def theoremSpecificEndgamePilotClosed : Prop :=
-  forall A : AdmissibleClass, ConstrainedTheoremClosure A
+def theoremSpecificClosureLayerClosed : Prop :=
+  forall A : AdmissibleClass, ScopedClosure A
 
-theorem theorem_specific_endgame_pilot_checked :
-    theoremSpecificEndgamePilotClosed := by
+theorem theorem_specific_closure_layer_checked :
+    theoremSpecificClosureLayerClosed := by
   intro A
-  exact constrained_theorem_endgame A
+  exact native_closure_theorem A
 
 end CompanionFormsCanonicalLaneLean
 end HautevilleHouse

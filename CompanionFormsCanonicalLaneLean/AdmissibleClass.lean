@@ -10,7 +10,7 @@ structure AdmissibleClass where
   gateWitness : endpointSatisfied ∨ remainderRecorded
 
 def admittedClosure (A : AdmissibleClass) : Prop :=
-  NativeBridgeClosed A.object ∧ (A.endpointSatisfied ∨ A.remainderRecorded)
+  NativeClosureTheorem A.object ∧ (A.endpointSatisfied ∨ A.remainderRecorded)
 
 end CompanionFormsCanonicalLaneLean
 end HautevilleHouse
